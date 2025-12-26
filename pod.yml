@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wallet-pod
+  labels:
+    app: wallet-app
+spec:
+  containers:
+    - name: wallet
+      image: shubhsaini/basewallet:v1
+      ports:
+        - containerPort: 3000
